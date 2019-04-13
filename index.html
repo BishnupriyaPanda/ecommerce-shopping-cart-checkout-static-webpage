@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ecommerce Interviw Task</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- customize style sheet start-->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/mobile.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+	<!-- customize style sheet end-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<!-- body start -->
+<body>
+ 
+<div class="container-fluid">
+    <div class="row">
+		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+ 
+			<div class="shopping_tab_panel padding_80 margin_lr_80">
+				<div class="shopping_tab">
+					<ul class="nav nav-tabs row">
+						<li class="col-lg-4 col-md-4 col-sm-4 col-xs-4 active">
+							<a href="#tab_default_1" data-toggle="tab">
+							01 Customer Info </a>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+							<a href="#tab_default_2" data-toggle="tab">
+							02 Shipping Info </a>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+							<a href="#tab_default_3" data-toggle="tab">
+							03 Payment Selection </a>
+						</li>
+					</ul>
+					<div class="tab-content customer_details_tab">
+						<div class="tab-pane active" id="tab_default_1">
+							 <div class="row m_0">
+								<h3>Customer Information</h3>
+								<!-- form area start -->
+								<form class="customer_info">
+								<div class="row">
+									<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									      <label class="control-label text-uppercase  " for="fname">First Name</label>
+										<input type="text" class="form-control" id="f_name" minlength="4" maxlength="100">
+									</div>
+									<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									  <label class="control-label text-uppercase" for="lname">Last Name</label>
+										<input type="text" class="form-control" id="l_name" minlength="4" maxlength="100">
+									</div>
+
+									<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									  <label class="control-label text-uppercase" for="address">Address</label>
+										  <textarea class="form-control" rows="5" id="customer_addres"></textarea>
+									</div>
+
+									<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									  <label class="control-label text-uppercase" for="country">Country</label>
+										<select class="form-control" id="customer_cuntry">
+											<option>Select Your Country</option>
+											<option>India</option>
+											<option>UK</option>
+											<option>US</option>
+										</select>
+									</div>
+									<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									  <label class="control-label text-uppercase" for="city">City</label>
+										<input type="text" class="form-control" id="customer_city" maxlength="15">
+									</div>
+									<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+										<div class="display_inline">
+												<label class="control-label text-uppercase" for="postalcode">Postal Code</label>
+												<input type="number" class="form-control" id="postal_code" minlength="6" maxlength="50" ><button type="submit" class="btn">Find</button>
+										</div>	
+									</div>
+									<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									  <label class="control-label text-uppercase" for="email">Phone</label>
+										<input type="number" class="form-control" id="phone_number" minlength="6" maxlength="50">
+									</div>
+								</div>
+							</form>
+							<!-- form area end -->
+							<div class="row margin_30">
+							<div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
+								<button type="button" class="btn text-left transparent_bg return_btn pl_0" ><i class="fa fa-arrow-left" aria-hidden="true"></i>Return to Shop</button>
+							</div><div class=" col-lg-3 col-md-3 col-sm-3 hidden-xs"></div>
+ 							<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 text-right pr_0">
+								<button type="submit" class="btn text-uppercase proceed_btn">Continue Shopping</button>
+							</div>
+							</div>
+
+							 </div>
+						</div>
+						<!--********************************** shopping_info tab start  tab 2**********************************-->
+						<div class="tab-pane" id="tab_default_2">
+							 		 <div class="row m_0 ">
+								<h3>Shipping Information</h3>
+								<!-- addres area start -->
+								 <div class="row margin_30 ml_0 mr_0 total_border ship_add">
+								 <div class="col-md-6 col-lg-6 col-sm-6">
+								  <div class="address_area row">	
+								 <p>
+								 Jany Larason<br>
+									Unit 2 green light retail part <br>
+									Halifax<br>
+									HX 1 5QN <br>
+									Tel:0344 332 5931
+									</p>
+									<div class="col-md-12 col-lg-12 col-sm-12 pl_0">
+									<button type="submit" class="btn edit_btn">Edit Address</button><button type="submit" class="btn edit_btn" >Add New</button>
+									</div> 
+								  </div>
+								 </div>
+								 <div class="col-md-6 col-lg-6 col-sm-6 pr_0">
+									<div id="map-canvas" >		 
+									  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1737.6221882978507!2d-98.48650795000005!3d29.421653200000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58aa57e6a56f%3A0xf08a9ad66f03e879!2sHenry+B.+Gonzalez+Convention+Center!5e0!3m2!1sen!2sus!4v1393884854786" style="width: 100%;height:255px;">
+										</iframe> 
+									</div>
+								</div>
+								</div>
+							<!-- addres area end -->
+					<!-- shipping metiod area start --> 
+							<div class="row margin_30">
+							 <div class="col-md-6 col-lg-6 col-sm-6">
+								<div class="delivry">
+									<label class="custom_radiobtn"> Standart Delivery
+											<input type="radio" name="radio" checked="">
+											<span class="radio_checkmark"></span>
+									</label>
+									<span class="free"><b>Free</b></span>
+									<p> estimated 14-20 Day shipping(Duties and taxes may be due upon delivery)</p>
+									</div> 
+								</div> 
+							 <div class="col-md-6 col-lg-6 col-sm-6">
+								<div class="delivry">
+									<label class="custom_radiobtn"> Fast Delivery
+											<input type="radio" name="radio" checked="">
+											<span class="radio_checkmark"></span>
+									</label>
+									<span class="free"><b>€ 8.00</b></span>
+									<p> estimated 2-5 Day shipping(Duties and taxes may be due upon delivery)</p>
+									</div> 
+								</div> 
+						  </div>
+						<!-- shipping metiod area start --> 
+							<div class="row margin_30">
+							<div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
+								<button type="button" class="btn text-left transparent_bg return_btn pl_0" >
+								<i class="fa fa-arrow-left" aria-hidden="true"></i>Back to Customer Info</button>
+							</div><div class=" col-lg-3 col-md-3 col-sm-3 hidden-xs"></div>
+ 							<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 text-right pr_0">
+								<button type="submit" class="btn text-uppercase proceed_btn">CONTINUE SHOPPING</button>
+							</div>
+							</div>
+
+							 </div>
+						</div>
+						<!--	************************************************************************ shopping_info tab end ********************************-->
+						<!--	************************************************************************ tab 3 start ********************************-->
+					<div class="tab-pane" id="tab_default_3">
+							 	 <div class="row m_0">
+								<h3>Payment Selection</h3>
+								 
+					<!-- shipping metiod area start --> 
+					<form class="customer_info">
+
+							<div class="row ">
+							 <div class="col-md-12 col-lg-12 col-sm-12  col-xs-12 mb_30">
+ 								<div class="delivry row m_0">
+								<label class="custom_radiobtn"> Standart Delivery
+								<input type="radio" name="radiobtn"  >
+								<span class="radio_checkmark"></span>
+								</label>
+								<span class="free"><img src="img/card.png"></span>
+								<p class="padd_btm_20"> estimated 14-20 Day shipping(Duties and taxes may be due upon delivery)</p>
+								
+								<div class="form-group has-feedback col-lg-12 col-md-12 col-sm-12 col-xs-12 p_0"> 
+									<label for="inputSuccess">Card Number</label>
+									<input type="text" placeholder="0000 0000 0000 0000"class="form-control" id="">
+ 								<i class="fa fa-credit-card  form-control-feedback" aria-hidden="true"></i> 
+                                </div> 
+								<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12 p_0"> 
+								<label for="inputSuccess">name on Card</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+								<div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12  "> 
+                                   <label for="inputSuccess">Expiry date</label>
+								   <input type="text"  placeholder="MM/YY" class="form-control" id="">
+                                </div> 
+								<div class="form-group has-feedback col-lg-3 col-md-3 col-sm-3 col-xs-12 p_0"> 
+									  <label for="cvv">Cvv code</label>
+									<input type="text" class="form-control" id="">
+									<i class="fa fa-question-circle-o  form-control-feedback" aria-hidden="true"></i> 
+                                </div> 
+							</div> 
+							
+						  </div>
+						  </div>
+						  <div class="row ">
+						   <div class="col-md-12 col-lg-12 col-sm-12  col-sm-12 ">
+								<div class="delivry">
+									<label class="custom_radiobtn"> Paypal  
+											<input type="radio" name="radiobtn"  >
+											<span class="radio_checkmark"></span>
+									</label>
+									<span class="free"><img src="img/paypal.png"></span>
+									<p> estimated 2-5 Day shipping(Duties and taxes may be due upon delivery)</p>
+									</div> 
+								</div> 
+								</div> 
+						<!-- shipping metiod area start --> 
+							<div class="row margin_30">
+							<div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
+								<button type="button" class="btn text-left transparent_bg return_btn pl_0" >
+								<i class="fa fa-arrow-left" aria-hidden="true"></i>Back to Shipping Info</button>
+							</div><div class=" col-lg-3 col-md-3 col-sm-3 hidden-xs"></div>
+ 							<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 text-right pr_0">
+								<button type="submit" class="btn text-uppercase proceed_btn"> COMPLETE ORDER</button>
+							</div>
+							</div>
+
+							 </div>
+ 						</div>
+				<!--	************************************************************************ tab 3 start ********************************-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- first division end -->
+		<!-- Second division start -->
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pr_0 body_customization">
+		<div class="cart_area padding_80"> 
+		 <div class="row border_btm shop_head mb_30">
+		 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <h3>Shopping Cart</h3></div> 
+		 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <p class="text-right mb_0"><span>2</span></p></div>  
+		 </div> 
+		 <div class="border_btm">
+		 <div class="row cart_items mb_30">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<div class="cart_img">
+						<img src="img/bag.png" class="img-responsive center-block"/>
+					</div> 
+			</div> 
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+			<div class="cart_desc">
+				<p class="">Lightweight College Bacgpack</p>
+				<p class="total_amount">€ 99.00</p>
+ 			 </div>
+			 </div>  
+		</div> 	
+		 <div class="row cart_items mb_30">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<div class="cart_img">
+						<img src="img/watch.png" class="img-responsive center-block"/>
+					</div> 
+			</div> 
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+			<div class="cart_desc">
+				<p class="">Buiseness Casual Leather watch Waterproof</p>
+				<p class="total_amount">€ 99.00</p>
+ 			 </div>
+			 </div>  
+		</div>		
+		</div>	
+	 <div class="row border_btm m_0 pad_20">
+		 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <p class="m_0">Have a voucher?</p></div> 
+		 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><p class="text-right total_amount m_0">dd</p> </div>  
+		 </div> 	
+		<div class="row m_0 padd_top_20 ">
+		 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <p class="m_0">Subtotal</p></div> 
+		 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><p class="text-right total_amount m_0">€ 198.00</p></div>  
+		 </div> 
+	<div class="row m_0 padd_top_20 border_btm padd_btm_20">
+		 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <p class="m_0"> Shipping</p></div> 
+		 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><p class="text-right m_0">Free</p></div>  
+		 </div> 	
+<div class="row m_0 padd_top_20 border_top total_cost">
+		 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"> <p class="m_0"> Total</p></div> 
+		 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><p class="text-right m_0"><b>€ 198.00</b></p></div>  
+		 </div> 		 
+		</div>
+		</div>
+		<!-- Second division end -->
+
+	</div>
+</div>
+
+
+</body>
+</html>

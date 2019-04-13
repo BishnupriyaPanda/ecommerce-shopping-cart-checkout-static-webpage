@@ -1,0 +1,27 @@
+
+/* ipad devices media starts */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	.margin_lr_80{
+		margin-left:0px;
+		margin-right:0px;
+	}
+}
+/* mobile devices media starts */
+
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+	.margin_lr_80{
+		margin-left:0px;
+		margin-right:0px;
+	}
+	.cart_area{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	.padding_80 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.body_customization {
+	padding-right:20px;
+}
+}

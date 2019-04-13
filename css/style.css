@@ -1,0 +1,355 @@
+/***
+Bootstrap Line Tabs by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+***/
+
+/* Tabs panel */
+/* .shopping_tab_panel {
+  border:1px solid #eee;
+  padding: 10px;
+} */
+
+/* global css */
+html, body {
+    height: 100%;
+}
+.body_customization{
+ min-height: 100%;
+}
+
+.m_0{
+	margin:0px;
+}
+.p_0{
+	padding:0px;
+}
+.mb_0{
+	margin-bottom:0px;
+}
+.ml_0{
+margin-left:0px;
+}
+.pl_0{
+	padding-left:0px;
+}
+.pr_0{
+	padding-right:0;
+}
+.padding_80{
+	padding-top:80px;
+	padding-bottom:80px;
+}
+.margin_lr_80{
+	margin-left:80px;
+	margin-right:80px;
+}
+.transparent_bg{
+	background:transparent;
+}
+.margin_30{
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.mb_30{
+	margin-bottom:30px;
+}
+.pad_20{
+	padding:20px 0;
+}
+.padd_top_20{
+	padding-top:20px;
+}
+.padd_btm_20{
+	padding-bottom:20px;
+}
+.border_top{
+	border-top:1px solid #ddd;
+}
+.total_border{
+	border:1px solid #ddd;
+}
+/* Default mode */
+.shopping_tab > .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+ 
+.shopping_tab > .nav-tabs > li > a {
+  border: 0;
+  margin-right: 0;
+    color: #d5d9dd;
+    text-transform: uppercase;
+	text-align:center;
+	    padding: 30px 0;
+	font-weight:600;
+}
+.shopping_tab > .nav-tabs > li > a > i {
+  color: #a6a6a6;
+}
+ 
+.shopping_tab > .nav-tabs > li.open > a, .shopping_tab > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+ }
+ 
+.shopping_tab > .nav-tabs > li.open .dropdown-menu, .shopping_tab > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+.shopping_tab > .nav-tabs > li.active {
+    border-bottom: 1px solid #000000;
+    position: relative;
+    margin-bottom: 2px;
+}
+.shopping_tab > .nav-tabs > li.active > a {
+  border: 0;
+  color: #333333;
+}
+ 
+.shopping_tab > .tab-content {
+  margin-top: -3px;
+  background-color: #fff;
+  border: 0;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
+.portlet .shopping_tab > .tab-content {
+  padding-bottom: 0;
+}
+ 
+ /* check out first form */
+ .customer_details_tab  h3{
+	 margin:30px 0px;
+ }
+ .customer_info .form-control{
+	 height:50px;
+	     outline: none;
+    box-shadow: none;
+    border-radius: 3px;
+ }
+ .customer_info label{ 
+	font-size: 12px;
+    color: #d5d9dd;
+	text-transform:uppercase;
+	}
+.display_inline  label{
+width: 100%;
+}	
+.display_inline  input{
+	width: 80%;
+    display: inline;
+    border-right: 0;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius:0px !important;
+}	
+.display_inline  button{
+    width: 20%;
+    position: absolute;
+    display: inline;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 0px !important;
+    background: transparent;
+    outline: none !important;
+    box-shadow: none !important;
+	    color: #00BCD4 !important;
+    font-weight: 600;
+
+}
+.proceed_btn{
+background-color: #0077e2!important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    height: 50px;
+    border-radius: 3px;
+	width:100%;
+}	
+.return_btn{
+     outline: none !important;
+    box-shadow: none !important;
+     height: 50px;
+    border-radius: 3px;	
+}	
+.return_btn  i{
+	margin-right:10px;
+}	
+/* For Firefox */
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* cart area start */
+.cart_area{
+	background:#f8fafb;
+	    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.cart_area h3{
+	
+	margin:0;
+}
+.cart_area  p span{
+	background: #0095f8;
+    padding: 5px 9px;
+    border-radius: 50%;
+    color: #fff;
+	text-align:center;
+	font-weight:bold;
+}
+.border_btm{
+	border-bottom:1px solid #eee;
+	
+}
+.cart_area .shop_head{
+	padding:27px 0;
+}
+.cart_items .cart_img{
+  width: 90px;
+    background: white;
+    height: 100%;
+    border: 1px solid #f8fafb;
+    margin: 0 auto;
+}
+.cart_items .cart_desc p{
+	 font-size: 17px;
+    color: #999;
+    font-weight: 500;
+}  
+.total_amount{
+	    color: #737373!important;
+    font-size: 14px!important;
+    font-weight: 600!important;
+} 
+
+.total_cost p{
+	font-size:17px;
+}
+/* shipping section css */
+.ship_add{
+border-radius:3px;
+}
+.address_area{
+	padding:20px;
+}
+
+.address_area p{ 
+line-height: 1.9em;
+    font-size: 17px;
+    color: #999;
+    font-weight: 500;
+	}
+.edit_btn{
+background:transparent!important;
+outline: none !important;
+box-shadow: none !important;
+height: 50px;
+border-radius: 3px;	
+color:#0077e2!important;
+padding-left:0px;
+font-weight:600;
+	}
+	/* The custom_radiobtn */
+.custom_radiobtn {
+        display: block;
+    color: #000!Important;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px!Important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 600;
+    transition: 0.2s;
+	text-transform:capitalize !important;
+}
+
+/* Hide the browser's default radio button */
+.custom_radiobtn input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radio_checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    border: 2px solid rgb(0, 119, 226);
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.custom_radiobtn:hover input ~ .radio_checkmark {
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+/* When the radio button is checked, add a blue background */
+.custom_radiobtn input:checked ~ .radio_checkmark {
+    background-color: #fff;
+    border: 1px solid rgb(0, 119, 226);
+    transition: 0.2s;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio_checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.custom_radiobtn input:checked ~ .radio_checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom_radiobtn .radio_checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(0, 119, 226);
+}
+.delivry{
+	padding:20px;
+	border:1px solid #ddd;
+	position:relative;
+}
+.delivry p{
+	font-size: 17px;
+    color: #999;
+    font-weight: 500;
+    padding-left: 20px;
+	text-transform:capitalize;
+}
+.free{
+	position: absolute;
+       right: 20px;
+    top: 20px;
+	}
+.customer_info .has-feedback label~.form-control-feedback {
+        top: 37px;
+    right: 15px;
+    font-size: 26px;
+    color: #BDBDBD;
+}
